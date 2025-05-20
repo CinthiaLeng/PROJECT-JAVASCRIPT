@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <!--boostrap styles-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS (including Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap 4 (requires jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--css styles-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>SRM Medicina Familiar</title>
+  </head>
+  <body>
+   
+    <img src="./images/logo.png" alt="logo" />
+
+    <!--header section-->
+    <header>
+      <div class="navbox">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">CRM</a>
+            <a href="https://www.pami.org.ar/" target="_blank">PAMI</a>
+
+            <a href="https://mail.yahoo.com/?.lang=es-AR" target="_blank"
+              >Yahoo Mail</a
+            >
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--main section-->
+  <div class="container">
+    <h1 id="calendar-reminder"></h1>
+    <img id="image-reminder" class="img-fluid" src="./images/peligro.gif" alt="alerta-calendario">
+    <audio id="sound-reminder" src="./images/sonido.alerta.mp3"></audio>
+  
+  </div>
+
+
+
+
+    <!--main left column-->
+    <main>
+      <div class="grid-col-left-side-menu-box">
+        <div class="left-side-menu">
+          
+          
+          <button class="main-button">
+            <img src="./images/pacientes.png" alt="pacientes" />
+            <a class="left-side-menu-item" href="pacientes">Pacientes Activos</a>
+          </button>
+
+          <button class="main-button">
+            <img src="./images/cambiado.png" alt="cambiados" />
+            <a class="left-side-menu-item" href="index.html">Cambiados</a>
+          </button>
+
+          <button class="main-button">
+            <img src="./images/baja.png" alt="dados de baja" />
+            <a class="left-side-menu-item" href="index.html">Dados de Baja</a>
+          </button>
+
+          <button class="main-button">
+            <img src="./images/fallecido.png" alt="fallecidos" />
+            <a class="left-side-menu-item" href="index.html">Fallecidos</a>
+          </button>
+
+          <button class="main-button">
+            <img src="./images/dashboard.png" alt="tablero" />
+            <a class="left-side-menu-item" href="https://charts.livegap.com/?lan=es" target="_blank" >Tablero</a>
+          </button>
+
+          <p>Actividades de Registro</p>
+          <button class="main-button">
+            <img src="./images/trimestrales.png" alt="recetas" />
+            <a
+              class="left-side-menu-item"
+              href="https://prestadores.pami.org.ar/receta-electronica.php"
+              target="_blank"
+              >Trimestrales</a
+            >
+          </button>
+          <button class="main-button">
+            <img src="./images/calendario.png" alt="calendario" />
+            <a
+              class="left-side-menu-item"
+              href="https://calendar.google.com/calendar/u/0/r"
+              target="_blank"
+              >Calendario</a
+            >
+          </button>
+          <button class="main-button">
+            <img src="./images/agenda.png" alt="agenda" />
+            <a
+              class="left-side-menu-item"
+              href="https://miro.com/es/gestion-proyectos/gestion-tareas/"
+              target="_blank"
+              >Agenda</a
+            >
+          </button>
+
+          <button class="main-button">
+            <img src="./images/prensa.png" alt="prensa" />
+            <a
+              class="left-side-menu-item"
+              href="https://www.canva.com/"
+              target="_blank"
+              >Prensa</a
+            >
+          </button>
+
+        </div>
+      </div>
+
+      <!--main mid column-->
+      <div class="grid-col-mid-menu-box">
+        <div class="center-menu">
+
+          <button class="mid-menu-item">
+            <img src="./images/receta.electronica.png" alt="receta electronica" />
+            <a
+              href="https://cup.pami.org.ar/controllers/loginController.php"
+              target="_blank"
+              >Receta Electrónica</a
+            >
+          </button>
+
+
+          <button class="mid-menu-item">
+            <img src="./images/formulario.png" alt="formulario" />
+            <a href="">Formulario de Contacto</a>
+          </button>
+          <button class="mid-menu-item">
+            <img src="./images/excel.png" alt="excel" />
+            <a
+              href="https://docs.google.com/spreadsheets/d/1ZtcJxXc1eZ2fnnhwbiX2dGfKJ2AgPccY/edit?gid=1680281806#gid=1680281806"
+              target="_blank"
+              >Base Datos PAMI</a
+            >
+          </button>
+
+          <button class="mid-menu-item">
+            <img src="./images/ppt.png" alt="powerpoint" />
+            <a
+              href="https://docs.google.com/presentation/d/1Hrp-gYmHg2gIGpJIWy4GoX6zLlGnmEUv/edit#slide=id.p1"
+              target="_blank"
+              >Esquema de Firma Receta</a
+            >
+          </button>
+
+          <button class="mid-menu-item">
+            <img src="./images/prestaciones.medicas.png" alt="prestaciones" />
+            <a
+              href="https://san.osteeluzmedica.com.ar/Login.aspx?ReturnUrl=%2f"
+              target="_blank"
+              >Atención y Control de Prestaciones</a
+            >
+          </button>
+
+          <button class="mid-menu-item">
+            <img src="./images/misrx.png" alt="misrx" />
+            <a href="https://misrx.com.ar/welcome" target="_blank">MisRx Digital</a>
+          </button>
+
+          <hr/>
+
+          <button type="button" class="btn btn-secondary btn-lg">
+            <img src="./images/nuevo paciente.png" alt="nuevo paciente" />Nuevo
+            Paciente
+          </button>
+        </div>
+      </div>
+
+      <!--main right column-->
+      <div class="grid-col-right-menu-box">
+        <div class="right-menu">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ir a
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <img src="./images/whatsappweb.png" alt="whatsappweb" />
+                <a
+                  class="dropdown-item"
+                  href="https://web.whatsapp.com/"
+                  target="_blank"
+                  >Whatsapp Web</a
+                >
+              </li>
+
+              <li>
+                <img src="./images/email.png" alt="email" />
+                <a class="dropdown-item" href="">Redactar mail</a>
+              </li>
+
+              <li>
+                <img src="./images/cargar.png" alt="subir archivo" />
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/drive/home"
+                  target="_blank"
+                  >Subir archivo</a
+                >
+              </li>
+
+              <li>
+                <img src="./images/descarga.png" alt="descargar archivo" />
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/drive/home"
+                  target="_blank"
+                  >Descargar archivo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+   
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button id="logout" class="btn btn-outline-info" type="button">Cerrar Sesión</button>
+    </div>
+
+
+    <!--footer section-->
+    <footer>
+      <p>©2025 Todos los derechos reservados. Diseñado por Cinthia Lenguer.</p>
+    </footer>
+
+    <!--boostrap js styles-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+ <!--js code-->
+ <script src="./javascript/index.js"></script>
+ <script src="./javascript/js.functions/calendar-alert-function.js"></script>
+
+  </body>
+</html>
